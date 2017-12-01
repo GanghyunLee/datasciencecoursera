@@ -19,18 +19,9 @@ best <- function(state, outcome)
         }
         
         ## Return hospital name in that state with lowest 30-day death
-        if(outcome == "heart attack")
-        {
-                outcomeIdx <- 13
-        }
-        else if(outcome == "heart failure")
-        {
-                outcomeIdx <- 19
-        }
-        else
-        {
-                outcomeIdx <- 25
-        }
+        if(outcome == "heart attack")           outcomeIdx <- 13
+        else if(outcome == "heart failure")     outcomeIdx <- 19
+        else                                    outcomeIdx <- 25
         ## rate
         mainData[,outcomeIdx] <- suppressWarnings(as.numeric(mainData[,outcomeIdx]))
         
