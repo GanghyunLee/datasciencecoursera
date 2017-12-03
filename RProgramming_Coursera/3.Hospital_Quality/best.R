@@ -29,7 +29,11 @@ best <- function(state, outcome)
         
         idx <- which(subData[,outcomeIdx] == min(subData[,outcomeIdx], na.rm = TRUE))
         
+        # the hospital names should be sorted in alphabetical order and the ???rst hospital in that set should be chosen
         result <- subData[idx,"Hospital.Name"]
-        result
+        resultIdx <- order(result)
+        result[resultIdx[1]]
 }
 
+
+#best("NY", "pneumonia")
