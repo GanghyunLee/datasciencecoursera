@@ -1,3 +1,10 @@
+#Principle 1: Show comparisons
+#Principle 2: Show causality, mechanism, explanation
+#Principle 3: Show multivariate data
+#Principle 4: Integrate multiple modes of evidence
+#Principle 5: Describe and document the evidence
+#Principle 6: Content is king
+
 #=======================================
 # Load data
 #=======================================
