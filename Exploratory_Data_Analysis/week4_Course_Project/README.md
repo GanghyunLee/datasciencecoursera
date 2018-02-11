@@ -30,7 +30,7 @@ PM2.5 Emissions Data (<b>summarySCC_PM25.rds</b>): This file contains a data fra
 * <b>type</b> : The type of source (point, non-point, on-road, or non-road)
 * <b>year</b> : The year of emissions recorded
 
-Source Classification Code Table (<b>Source_Classification_Code.rds</b>): This table provides a mapping from the SCC digit strings in the Emissions table to the actual name of the PM2.5 source. The sources are categorized in a few different ways from more general to more specific and you may choose to explore whatever categories you think are most useful. For example, source ¡°10100101¡± is known as ¡°Ext Comb /Electric Gen /Anthracite Coal /Pulverized Coal¡±.
+Source Classification Code Table (<b>Source_Classification_Code.rds</b>): This table provides a mapping from the SCC digit strings in the Emissions table to the actual name of the PM2.5 source. The sources are categorized in a few different ways from more general to more specific and you may choose to explore whatever categories you think are most useful. For example, source "10100101" is known as "Ext Comb /Electric Gen /Anthracite Coal /Pulverized Coal".
 
 You can read each of the two files using the <b>readRDS()</b> function in R. For example, reading in each file can be done with the following code:
 
