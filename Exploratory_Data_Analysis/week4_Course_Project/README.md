@@ -45,13 +45,13 @@ You must address the following questions and tasks in your exploratory analysis.
 
 1. Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
 ![plot of chunk plot1](plot1.png) 
-2. Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (<b>fips == 24510</b>) from 1999 to 2008? Use the base plotting system to make a plot answering this question.
+2. Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (<b>fips == "24510"</b>) from 1999 to 2008? Use the base plotting system to make a plot answering this question.
 ![plot of chunk plot2](plot2.png) 
-3. Of the four types of sources indicated by the <b>type</b>(point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999?2008 for Baltimore City? Which have seen increases in emissions from 1999?2008? Use the ggplot2 plotting system to make a plot answer this question.
+3. Of the four types of sources indicated by the <b>type</b>(point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999~2008 for Baltimore City? Which have seen increases in emissions from 1999~2008? Use the ggplot2 plotting system to make a plot answer this question.
 ![plot of chunk plot3](plot3.png) 
-4. Across the United States, how have emissions from coal combustion-related sources changed from 1999?2008?
+4. Across the United States, how have emissions from coal combustion-related sources changed from 1999~2008?
 ![plot of chunk plot4](plot4.png) 
-5. How have emissions from motor vehicle sources changed from 1999?2008 in Baltimore City?
+5. How have emissions from motor vehicle sources changed from 1999~2008 in Baltimore City?
 ![plot of chunk plot5](plot5.png) 
-6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (<b>fips == 06037</b>). Which city has seen greater changes over time in motor vehicle emissions?
+6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (<b>fips == "06037"</b>). Which city has seen greater changes over time in motor vehicle emissions?
 ![plot of chunk plot6](plot6.png) 
