@@ -1,0 +1,82 @@
+# My First knitr Document
+
+This is my first R Markdown file
+
+## Global Options
+Every code and result will be hide
+
+```{r setoptions, echo=TRUE}
+# library(knitr)
+# opts_chunk$set(echo = FALSE, results = "hide")
+# opts_chunk$set(cache = TRUE) # After the first run, results are loaded from cache
+```
+
+## Introduction
+```{r computetime, echo=FALSE}
+time <- format(Sys.time(), "%a %b %d %X %Y")
+rand <- rnorm(1)
+```
+
+The current time is `r time`. My favorite random number is `r rand`.
+
+Here, we're going load some data.
+
+```{r firstchunk}
+library(datasets)
+data(airquality)
+summary(airquality)
+```
+
+Let's first make a pairs plot of the data.
+
+```{r}
+pairs(airquality)
+```
+
+Here's a regression model of ozone on wind, solar radiation, and temperature.
+
+```{r}
+library(stats)
+fit <- lm(Ozone ~ Wind + Temp + Solar.R, data=airquality)
+summary(fit)
+```
+
+Here is a table of regression coefficients
+```{r show table, results = "asis"}
+library(xtable)
+xt <- xtable(summary(fit))
+print(xt, type = "html")
+```
+
+Don't echo the code
+```{r simulation, echo = FALSE}
+set.seed(1)
+x <- rnorm(100)
+mean(x)
+```
+
+Here's an unordered list:
+
+* Fist element
+
+* Second elements
+
+## Simulation
+
+Let's first simulate some data.
+```{r simulation data, echo = TRUE}
+x <- rnorm(100); y <- x + rnorm(100, sd = 0.5)
+```
+
+Here is a scatterplot of the data.
+```{r scatterplot, fig.height=4}
+par(mar = c(5,4,1,1), las = 1)
+plot(x, y, main = "My Simulated Data")
+```
+
+# More Complicated Way
+
+library(knitr)  
+setwd(<working directory>)  
+knit2html("document.Rmd")  
+browseURL("document.html")  
